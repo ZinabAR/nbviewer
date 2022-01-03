@@ -1,0 +1,87 @@
+from itertools import permutations ,combinations
+A = ['1','2','3','4']
+B = ['a','b','c','d']
+C = ['a','1','@','boy']
+
+per_A=list(permutations(A)) #will give all permutation possible pf list A
+print(per_A)
+len(per_A)   #number of permutation of list A
+
+[('1', '2', '3', '4'), ('1', '2', '4', '3'), ('1', '3', '2', '4'), ('1', '3', '4', '2'), ('1', '4', '2', '3'), ('1', '4', '3', '2'), ('2', '1', '3', '4'), ('2', '1', '4', '3'), ('2', '3', '1', '4'), ('2', '3', '4', '1'), ('2', '4', '1', '3'), ('2', '4', '3', '1'), ('3', '1', '2', '4'), ('3', '1', '4', '2'), ('3', '2', '1', '4'), ('3', '2', '4', '1'), ('3', '4', '1', '2'), ('3', '4', '2', '1'), ('4', '1', '2', '3'), ('4', '1', '3', '2'), ('4', '2', '1', '3'), ('4', '2', '3', '1'), ('4', '3', '1', '2'), ('4', '3', '2', '1')]
+
+24
+
+per_A1=list(permutations(A,2)) #will give 2- permutation possible pf list A
+print(per_A1)
+len (per_A1)   #number of 2-permutation of list A
+
+[('1', '2'), ('1', '3'), ('1', '4'), ('2', '1'), ('2', '3'), ('2', '4'), ('3', '1'), ('3', '2'), ('3', '4'), ('4', '1'), ('4', '2'), ('4', '3')]
+
+12
+
+ per_B=list(permutations(B)) #will give all permutation possible pf list B
+print(per_B)
+len(per_B) #number of permutation of list B
+
+[('a', 'b', 'c', 'd'), ('a', 'b', 'd', 'c'), ('a', 'c', 'b', 'd'), ('a', 'c', 'd', 'b'), ('a', 'd', 'b', 'c'), ('a', 'd', 'c', 'b'), ('b', 'a', 'c', 'd'), ('b', 'a', 'd', 'c'), ('b', 'c', 'a', 'd'), ('b', 'c', 'd', 'a'), ('b', 'd', 'a', 'c'), ('b', 'd', 'c', 'a'), ('c', 'a', 'b', 'd'), ('c', 'a', 'd', 'b'), ('c', 'b', 'a', 'd'), ('c', 'b', 'd', 'a'), ('c', 'd', 'a', 'b'), ('c', 'd', 'b', 'a'), ('d', 'a', 'b', 'c'), ('d', 'a', 'c', 'b'), ('d', 'b', 'a', 'c'), ('d', 'b', 'c', 'a'), ('d', 'c', 'a', 'b'), ('d', 'c', 'b', 'a')]
+
+24
+
+per_B1=list(permutations(B,2)) #will give 2-permutation possible pf list B
+print(per_B1)
+len(per_B1) #number of 2- permutation of list B
+
+[('a', 'b'), ('a', 'c'), ('a', 'd'), ('b', 'a'), ('b', 'c'), ('b', 'd'), ('c', 'a'), ('c', 'b'), ('c', 'd'), ('d', 'a'), ('d', 'b'), ('d', 'c')]
+
+12
+
+#will give all permutation possible pf list C
+per_C=list(permutations(C))
+print(per_C)
+len(per_C) #number of permutation of list C
+
+[('a', '1', '@', 'boy'), ('a', '1', 'boy', '@'), ('a', '@', '1', 'boy'), ('a', '@', 'boy', '1'), ('a', 'boy', '1', '@'), ('a', 'boy', '@', '1'), ('1', 'a', '@', 'boy'), ('1', 'a', 'boy', '@'), ('1', '@', 'a', 'boy'), ('1', '@', 'boy', 'a'), ('1', 'boy', 'a', '@'), ('1', 'boy', '@', 'a'), ('@', 'a', '1', 'boy'), ('@', 'a', 'boy', '1'), ('@', '1', 'a', 'boy'), ('@', '1', 'boy', 'a'), ('@', 'boy', 'a', '1'), ('@', 'boy', '1', 'a'), ('boy', 'a', '1', '@'), ('boy', 'a', '@', '1'), ('boy', '1', 'a', '@'), ('boy', '1', '@', 'a'), ('boy', '@', 'a', '1'), ('boy', '@', '1', 'a')]
+
+24
+
+com_A= list(combinations(A,4)) #will give all combinations possible pf list A
+print(com_A)
+len(com_A) #number of combinations of list A
+
+[('1', '2', '3', '4')]
+
+1
+
+com_A1= list(combinations(A,2)) #will give 2-combinations possible pf list A
+print(com_A1)
+len(com_A1)  #number of 2-combinations of list A
+
+[('1', '2'), ('1', '3'), ('1', '4'), ('2', '3'), ('2', '4'), ('3', '4')]
+
+6
+
+com_B=list(combinations(B,4))  #will give all combinations possible pf list B
+print(com_B)
+len(com_B)  #number of combinations of list B
+
+[('a', 'b', 'c', 'd')]
+
+1
+
+com_B1=list(combinations(B,2))  # will give 2-combinations possible pf list B
+print(com_B1)
+len(com_B1)   #number of 2-combinations of list B
+
+[('a', 'b'), ('a', 'c'), ('a', 'd'), ('b', 'c'), ('b', 'd'), ('c', 'd')]
+
+6
+
+#will give all combinations possible pf list C
+com_C=list(combinations(C,4))
+print(com_C)
+len(com_C)  #number of combinations of list C
+
+[('a', '1', '@', 'boy')]
+
+1
+
